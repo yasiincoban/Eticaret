@@ -1,0 +1,20 @@
+﻿@using yasinCobanEticaret.Models;
+@model IEnumerable<ProductModel>
+@{
+    ViewBag.Title = "Index";
+}
+<div class="jumbotron" style="background-image:url(../../Upload/a.jpg)">
+    <div class="container">
+        <h1 class="display-3">Shepherd Markt'a Hoşgeldiniz</h1>
+        <p class="lead">Shepherd Markt 1983 Yılında Elmadağ’da açtığı mağaza ile Türkiye’nin ilk bilgisayar mağazası unvanını taşımaktadır. 10 yılı aşkın süredir online alışveriş sitesi shepherdmarkt.com ile Türkiye’nin her noktasında milyonlarca müşteriye ulaşmaktayız. Dünyaca ünlü teknoloji markalarının binlerce ürün çeşidiyle her bütçe ve tarza hitap ediyoruz.</p>
+        
+        <p class="lead">
+            <a class="btn btn-primary btn-sm" href="http://www.yasincoban.com" role="button">Daha fazlası için...</a>
+        </p>
+    </div>
+</div>
+
+<div class="container pb-5">
+    @Html.Partial("_ProductList", Model)
+</div>
+
